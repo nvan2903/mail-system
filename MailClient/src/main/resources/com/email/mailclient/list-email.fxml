@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox
+      prefHeight="799.0" prefWidth="1314.0"
+      xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.email.mailclient.controllers.MainController">
+    <HBox alignment="CENTER" prefHeight="70.0" prefWidth="1314.0">
+        <children>
+            <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="121.0" text="Button" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="133.0" text="Button" />
+            <Button layoutX="88.0" layoutY="10.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="118.0" text="Button" />
+            <Button layoutX="166.0" layoutY="10.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="139.0" text="Button" />
+        </children>
+    </HBox>
+    <TableView fx:id="tableViewEmails" layoutY="76.0" prefHeight="701.0" prefWidth="1314.0">
+        <columns>
+            <TableColumn fx:id="fromColumn" prefWidth="284.0" text="Từ" />
+            <TableColumn fx:id="subjectColumn" prefWidth="659.0" text="Tiêu Đề" />
+            <TableColumn fx:id="dateColumn" prefWidth="262.0" text="Ngày Gửi" />
+            <TableColumn fx:id="isReadColumn" prefWidth="108.0" text="Đã Đọc" />
+        </columns>
+    </TableView>
+</VBox>

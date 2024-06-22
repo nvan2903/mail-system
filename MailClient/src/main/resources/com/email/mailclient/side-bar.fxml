@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!-- sidebar.fxml -->
+
+<VBox fx:id="sidebarInclzude"
+      xmlns="http://javafx.com/javafx/17.0.2-ea"
+      xmlns:fx="http://javafx.com/fxml/1"
+      style="-fx-background-color: #0947b6;"
+      fx:controller="com.email.mailclient.controllers.MainController">
+
+    <!-- Side Menu -->
+    <VBox prefHeight="972.0" prefWidth="310.0">
+        <children>
+            <VBox alignment="CENTER" prefHeight="180.0" prefWidth="216.0">
+                <children>
+                    <Button mnemonicParsing="false" prefHeight="135.0" prefWidth="130.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15; -fx-border-radius: 15;" stylesheets="@css/dashboard.css">
+                        <graphic>
+                            <ImageView fitHeight="96.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="@icons/image.png" />
+                                </image>
+                            </ImageView>
+                        </graphic>
+                        <effect>
+                            <DropShadow height="5.0" radius="2.0" width="5.0" />
+                        </effect>
+                        <styleClass>
+                            <String fx:value="button_menu" />
+                            <String fx:value="cursor_hand" />
+                        </styleClass>
+                    </Button>
+                </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="64.0" prefWidth="216.0" stylesheets="@css/dashboard.css">
+                <children>
+                    <Label prefHeight="58.0" prefWidth="137.0" text="Hộp Thư Đến" textFill="WHITE">
+                        <font>
+                            <Font name="Calibri Bold" size="24.0" />
+                        </font>
+                    </Label>
+                </children>
+                <VBox.margin>
+                    <Insets top="5.0" />
+                </VBox.margin>
+                <styleClass>
+                    <String fx:value="menu_bars" />
+                    <String fx:value="cursor_hand" />
+                </styleClass>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="205.0" prefHeight="64.0" prefWidth="216.0" stylesheets="@css/dashboard.css">
+                <children>
+                    <Label prefHeight="58.0" prefWidth="123.0" text="Thư Đã Gửi" textFill="WHITE">
+                        <font>
+                            <Font name="Calibri Bold" size="24.0" />
+                        </font>
+                    </Label>
+                </children>
+                <VBox.margin>
+                    <Insets top="5.0" />
+                </VBox.margin>
+                <styleClass>
+                    <String fx:value="menu_bars" />
+                    <String fx:value="cursor_hand" />
+                </styleClass>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="205.0" prefHeight="64.0" prefWidth="216.0" stylesheets="@css/dashboard.css">
+                <children>
+                    <Label prefHeight="58.0" prefWidth="106.0" text="Thùng Rác" textFill="WHITE">
+                        <font>
+                            <Font name="Calibri Bold" size="24.0" />
+                        </font>
+                    </Label>
+                </children>
+                <VBox.margin>
+                    <Insets top="5.0" />
+                </VBox.margin>
+                <styleClass>
+                    <String fx:value="menu_bars" />
+                    <String fx:value="cursor_hand" />
+                </styleClass>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="269.0" prefHeight="64.0" prefWidth="216.0" stylesheets="@css/dashboard.css">
+                <children>
+                    <Label prefHeight="58.0" prefWidth="104.0" text="Thư Nháp" textFill="WHITE">
+                        <font>
+                            <Font name="Calibri Bold" size="24.0" />
+                        </font>
+                    </Label>
+                </children>
+                <VBox.margin>
+                    <Insets top="5.0" />
+                </VBox.margin>
+                <styleClass>
+                    <String fx:value="menu_bars" />
+                    <String fx:value="cursor_hand" />
+                </styleClass>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="269.0" prefHeight="64.0" prefWidth="216.0" stylesheets="@css/dashboard.css">
+                <children>
+                    <Label prefHeight="58.0" prefWidth="109.0" text="Tất Cả Thư" textFill="WHITE">
+                        <font>
+                            <Font name="Calibri Bold" size="24.0" />
+                        </font>
+                    </Label>
+                </children>
+                <VBox.margin>
+                    <Insets top="5.0" />
+                </VBox.margin>
+                <styleClass>
+                    <String fx:value="menu_bars" />
+                    <String fx:value="cursor_hand" />
+                </styleClass>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="154.0" prefWidth="216.0">
+                <children>
+                    <Button  alignment="CENTER" mnemonicParsing="false"  prefHeight="56.0" prefWidth="202.0" style="-fx-background-radius: 50; -fx-border-radius: 50; -fx-background-color: #0947b6;" stylesheets="@css/dashboard.css" text="Soạn Thư +" textAlignment="CENTER" textFill="WHITE">
+                        <font>
+                            <Font name="System Bold" size="24.0" />
+                        </font>
+                        <VBox.margin>
+                            <Insets left="6.0" />
+                        </VBox.margin>
+                        <effect>
+                            <DropShadow height="5.0" radius="2.0" width="5.0" />
+                        </effect>
+                        <styleClass>
+                            <String fx:value="cursor_hand" />
+                            <String fx:value="button_menu" />
+                        </styleClass>
+                    </Button>
+                </children>
+            </VBox>
+        </children>
+    </VBox>
+</VBox>

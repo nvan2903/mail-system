@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane prefHeight="965.0" prefWidth="857.0" styleClass="container" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.email.mailclient.controllers.ForwardEmailController">
+    <children>
+        <Label layoutX="10.0" layoutY="75.0" text="Người Nhận" />
+        <Label layoutX="18.0" layoutY="132.0" text="Tiêu Đề" />
+        <TextField fx:id="txtRecipient" layoutX="107.0" layoutY="69.0" prefHeight="39.0" prefWidth="716.0" />
+        <TextField fx:id="txtSubject" layoutX="107.0" layoutY="126.0" prefHeight="39.0" prefWidth="716.0" />
+        <Button layoutX="724.0" layoutY="739.0" mnemonicParsing="false" onAction="#btnSendAction" prefHeight="39.0" prefWidth="99.0" text="Gửi" AnchorPane.bottomAnchor="27.0" AnchorPane.rightAnchor="34.0" />
+<!--        <Button layoutX="582.0" layoutY="739.0" mnemonicParsing="false" onAction="#btnAttachFileAction" prefHeight="39.0" prefWidth="105.0" text="Đính Kèm File" AnchorPane.bottomAnchor="27.0" AnchorPane.rightAnchor="170.0" />-->
+        <VBox fx:id="attachmentArea" layoutX="31.0" layoutY="706.0" prefHeight="152.0" prefWidth="796.0" />
+        <HTMLEditor fx:id="txtContent" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="28.0" layoutY="195.0" prefHeight="493.0" prefWidth="796.0" />
+    </children>
+</AnchorPane>

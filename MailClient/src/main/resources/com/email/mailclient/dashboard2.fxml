@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="980.0" prefWidth="1697.0" style="-fx-background-color: #0947b6;" stylesheets="@css/dashboard.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.email.mailclient.controllers.MainController">
+    <children>
+        <HBox>
+            <!-- Side Menu -->
+            <fx:include source="side-bar.fxml" />
+            <!-- Main Content -->
+            <VBox layoutX="345.0" layoutY="19.0" prefHeight="972.0" prefWidth="1348.0">
+                <children>
+                    <!-- Search Box -->
+                    <HBox alignment="CENTER" prefHeight="131.0" prefWidth="1314.0">
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="15.0" top="10.0" />
+                        </padding>
+                        <children>
+                            <HBox alignment="CENTER" prefHeight="57.0" prefWidth="900.0">
+                                <children>
+                                    <TextField prefHeight="47.0" prefWidth="940.0" promptText="Search" style="-fx-background-radius: 50;">
+                                        <effect>
+                                            <DropShadow blurType="ONE_PASS_BOX" height="2.0" radius="0.5" width="2.0" />
+                                        </effect>
+                                    </TextField>
+                                </children>
+                            </HBox>
+                            <HBox alignment="CENTER" prefHeight="57.0" prefWidth="451.0">
+                                <children>
+                                    <Label id="txtUserName" fx:id="txtUserName" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="427.0" text="Tên Người Dùng">
+                                        <font>
+                                            <Font name="Calibri Bold" size="24.0" />
+                                        </font>
+                                    </Label>
+                                </children>
+                            </HBox>
+                        </children>
+                    </HBox>
+
+                    <VBox fx:id="mainVBox" prefHeight="815.0" prefWidth="1348.0" style="-fx-background-color: white; -fx-background-radius: 25;">
+                        <!-- Main Content Area -->
+                        <fx:include source="list-email.fxml" />
+                    </VBox>
+                </children>
+            </VBox>
+        </HBox>
+    </children>
+</AnchorPane>
